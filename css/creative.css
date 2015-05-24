@@ -120,6 +120,10 @@ aside {
     transition: all .35s;
 }
 
+#projects .navbar-default {
+    border-bottom: 1px solid #838383;
+}
+
 .navbar-default.affix {
     border-color: rgba(34,34,34,.05);
     background-color: rgba(255, 255, 255, 0.9);
@@ -200,6 +204,12 @@ aside {
     border-color: #fff;
 }
 
+#projects .navbar-default .navbar-toggle:focus, #projects .navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+    border-color: #D6665C;
+    transition: all 0.35s ease 0s;
+}
+
 @media(max-width:767px) {
     .navbar-default .navbar-collapse, .navbar-default .navbar-form {
         background-color: rgba(255, 255, 255, 0.71);
@@ -231,6 +241,11 @@ aside {
     padding: 7px 15px;
     list-style: outside none none;
     border: 1px solid #000B20;
+}
+
+#projects .language-mobile:hover, #projects .language-mobile:focus {
+    border: 1px solid #D6665C;
+    color: #333;
 }
 
 .language-mobile:hover, .language-mobile:focus {
@@ -284,6 +299,10 @@ aside {
         text-decoration: none;
         color: #333;
         border-color: #fff;
+    }
+    
+    #projects .language:hover, #projects .language:focus {
+        border-color: #D6665C;
     }
     
     .language-mobile {
@@ -728,6 +747,72 @@ header .header-content .header-content-inner p {
 .twitter:hover, .facebook:hover, .linked-in:hover {
     border: 2px solid #fff;
     transition: all 0.35s ease 0s;
+}
+
+#project-pics .col-xs-12 {
+    margin-bottom: 8em;
+}
+
+#projects #about {
+    padding: 15em 2em 8em 2em;
+}
+
+@media(max-width:992px) {
+    #projects .short {
+        margin-bottom: 1em;
+    }
+}
+
+.project-link:hover {
+    color: #D6665C;
+}
+
+.next, .previous {
+    margin-top: -3em;
+    margin-bottom: 8em;
+    font-size: 1.5em;
+}
+
+.next {
+    float: right;
+}
+
+.previous {
+    float: left;
+}
+
+.next:hover, .previous:hover {
+    color: #D6665C;
+    text-decoration: none;
+}
+
+@media(max-width:360px) {
+    #project-pics .col-xs-12 {
+        margin-bottom: 2em;
+    }
+    .next, .previous {
+        margin-top: 0;
+    }
+}
+
+@media(max-width:768px) {
+    .next, .previous {
+        font-size: 1em;
+    }
+}
+
+.glyphicon-menu-right {
+    margin-left: 0.4em;
+    padding-top: 0.4em;
+}
+
+.glyphicon-menu-left {
+    margin-right: 0.4em;
+    padding-top: 0.4em;
+}
+
+#project-pics .img-responsive {
+    width: 100%;
 }
 
 .call-to-action h2 {
