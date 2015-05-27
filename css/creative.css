@@ -114,7 +114,7 @@ aside {
 .navbar-default {
     border-color: transparent;
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
-    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0.55);
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -201,7 +201,8 @@ aside {
 
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
     background-color: transparent;
-    border-color: #fff;
+    border-color: #D6665C;
+    transition: all 0.35s ease 0s;
 }
 
 #projects .navbar-default .navbar-toggle:focus, #projects .navbar-default .navbar-toggle:hover {
@@ -249,15 +250,22 @@ aside {
 }
 
 .language-mobile:hover, .language-mobile:focus {
-    border: 1px solid #fff;
-    color: #fff;
+    border: 1px solid #D6665C;
+    color: #333;
     text-decoration: none;
 }
 
 .navbar-default.affix .language-mobile:hover, .language-mobile:focus {
     border: 1px solid #D6665C;
-    color: #D6665C;
+    color: #333;
     text-decoration: none;
+}
+
+    
+.language:hover, .language:focus {
+    text-decoration: none;
+    color: #333;
+    border-color: #D6665C;
 }
 
 @media(min-width:768px) {
@@ -281,7 +289,7 @@ aside {
     
     .navbar-default.affix .language:hover {
         border-color: #D6665C;
-        color: #D6665C;
+        color: #333;
     }
     
     .language {
@@ -293,12 +301,6 @@ aside {
         list-style: outside none none;
         border: 2px solid #333;
         display: block;
-    }
-    
-    .language:hover, .language:focus {
-        text-decoration: none;
-        color: #333;
-        border-color: #fff;
     }
     
     #projects .language:hover, #projects .language:focus {
@@ -386,7 +388,19 @@ header .header-content .header-content-inner p {
 
 @media(min-width:768px) {
     header .header-content .header-content-inner p {
-        margin-bottom: 180px;
+        margin-bottom: 100px;
+    }
+    header .header-content {
+        top: 62%;
+    }
+}
+
+@media(min-width:1294px) {
+    header .header-content .header-content-inner p {
+        margin-bottom: 160px;
+    }
+    header .header-content {
+        top: 65%;
     }
 }
 
@@ -429,6 +443,10 @@ header .header-content .header-content-inner p {
     display: block;
     position: relative;
     margin: 0 auto;
+}
+
+.portfolio-box > img {
+    width: 100%;
 }
 
 .portfolio-box .portfolio-box-caption {
@@ -656,6 +674,12 @@ header .header-content .header-content-inner p {
     padding-left: 1.25em;
     font-size: 1.2em;
     margin-right: 1.3em;
+    border: 2px solid #FE9800;
+    color: #fff;
+}
+
+#contact .btn:hover, #contact .btn:focus {
+    border: 2px solid #fff;
 }
 
 @media(min-width:360px) {
@@ -739,7 +763,7 @@ header .header-content .header-content-inner p {
 
 .twitter, .facebook, .linked-in {
     padding: 0.8em;
-    border: 2px solid #EC9109;
+    border: 2px solid #FE9800;
     margin-top: 1.3em;
     margin-right: 1.2em;
 }
@@ -877,9 +901,9 @@ fieldset[disabled] .btn-default.active {
 }
 
 .btn-primary.btn-xl {
-    border: 2px solid #EC9109;
+    border: 2px solid #000000;
     border-radius: 0;
-    color: #fff;
+    color: #000000;
     background-color: transparent;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
@@ -892,7 +916,7 @@ fieldset[disabled] .btn-default.active {
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
-    border-color: #fff;
+    border-color: #D6665C;
     background-color: transparent;
 }
 
