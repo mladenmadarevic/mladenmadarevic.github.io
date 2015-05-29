@@ -142,6 +142,10 @@ aside {
     filter: alpha(opacity=80);
 }
 
+.navbar-default .nav > li>a {
+    display: inline-block;
+}
+
 .navbar-default .nav > li>a,
 .navbar-default .nav>li>a:focus {
     font-size: 1.2em;
