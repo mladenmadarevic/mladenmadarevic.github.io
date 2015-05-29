@@ -983,7 +983,3 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #222;
 }
-
-.navbar-default .nav > li > a {
-    display: inline-block !important;
-}
