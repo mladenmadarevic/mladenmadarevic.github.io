@@ -142,7 +142,7 @@ aside {
     filter: alpha(opacity=80);
 }
 
-.navbar-default .nav > li > a {
+.navbar-default .nav > li {
     display: inline-block !important;
 }
 
